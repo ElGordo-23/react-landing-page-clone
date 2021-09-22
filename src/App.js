@@ -6,40 +6,15 @@ import googleBadge from './images/google-play-badge.png';
 import sun from './images/sun.png';
 import { ReactComponent as SunsetLines } from './images/sunset_lines.svg';
 /** @jsxImportSource @emotion/react */
-import {
-  animation,
-  appStoreBadgeStyle,
-  containerStyles,
-  footerStyle,
-  googlePlayBadgeStyle,
-  h1Styles,
-  h2Style,
-  h2Styles,
-  heroImage2Style,
-  heroImage3Style,
-  heroImageStyle,
-  imgSunsetLinesStyle,
-  imgSunStyle,
-  paragraphStyles,
-  paragraphStyles2,
-  s1Style,
-  s2ContainerStyles,
-  s2Style,
-  s3ContainerStyles,
-  s3Style,
-  s4Style,
-  wrapperStyle,
-} from './styles.js';
+import { s1Style, s2Style, s3Style, s4Style, wrapper } from './styles.js';
 
 function App() {
   return (
-    <div className="Wrapper" css={wrapperStyle}>
+    <div className="Wrapper" css={wrapper}>
       <section id="s1" css={s1Style}>
-        <div className="Container" css={containerStyles}>
-          <h1 className="Header" css={h1Styles}>
-            Calmaria
-          </h1>
-          <h2 className="Keywords" css={h2Styles}>
+        <div className="Container">
+          <h1 className="Header">Calmaria</h1>
+          <h2 className="Keywords">
             {' '}
             Focus /
             <br />
@@ -52,39 +27,36 @@ function App() {
             href="https://play.google.com/store/apps/details?id=com.abdz.breathing"
           >
             <img
+              className="GooglePlayBadge"
               src={googleBadge}
               alt="Google Play Badge"
-              css={googlePlayBadgeStyle}
             />
           </a>
-          <a
-            className="AppStore"
-            href="https://apps.apple.com/us/app/calmaria/id1523108871"
-          >
-            <AppstoreBadge css={appStoreBadgeStyle} />
+          <a href="https://apps.apple.com/us/app/calmaria/id1523108871">
+            <AppstoreBadge className="AppStore" />
           </a>
           <div>
-            <img src={heroImage} alt="Display of App" css={heroImageStyle} />
+            <img className="Hero" src={heroImage} alt="Display of App" />
           </div>
-          <div className="Animation" css={animation}>
-            <img src={sun} alt="Sun" css={imgSunStyle} />
-            <SunsetLines css={imgSunsetLinesStyle} />
+          <div className="Animation">
+            <img className="Sun" src={sun} alt="Sun" />
+            <SunsetLines className="SunLines" />
           </div>
         </div>
       </section>
       <section id="s2" css={s2Style}>
-        <div className="Container" css={s2ContainerStyles}>
-          <p css={paragraphStyles}>
+        <div className="Container">
+          <p>
             Access to information has helped us evolve rapidly but not without
             side effects. Misinformation and the strong polarization of opinions
             are amplified by our confirmation bias tendencies. What to believe,
             who is right, who is wrong?
           </p>
-          <p css={paragraphStyles}>
+          <p>
             Questions with no answers inevitably create anxiety. The good news
             is that there is a simple way to reduce it, just breathe. It works!{' '}
           </p>
-          <p css={paragraphStyles2}>
+          <p>
             There are several different breathing techniques and exercises that
             are designed to bring your body to a deep relaxation state. Holding
             your breath for a period of time allows your body to better
@@ -92,12 +64,12 @@ function App() {
             is simply inhaling for 4 seconds, holding your breath for 7 seconds
             and exhaling for 8 seconds.{' '}
           </p>
-          <img src={heroImage2} alt="heroimage 2" css={heroImage2Style} />
+          <img className="Hero2" src={heroImage2} alt="heroimage 2" />
         </div>
       </section>
       <section id="s3" css={s3Style}>
-        <div className="Container" css={s3ContainerStyles}>
-          <h2 css={h2Style}>Calmaria</h2>
+        <div className="Container">
+          <h2>Calmaria</h2>
           <span>[ feminine ] /kɑʊma’ɾia/</span>
           <p>
             In Portuguese means calmness, tranquility, calm. It’s often used by
@@ -106,11 +78,11 @@ function App() {
             peace of mind and tranquility to your busy day to day life. Just
             breathe and relax.
           </p>
-          <img src={heroImage3} alt="heroImage3" css={heroImage3Style} />
+          <img src={heroImage3} alt="heroImage3" />
         </div>
       </section>
       <section id="s4" css={s4Style}>
-        <div className="Container" css={s3ContainerStyles}>
+        <div className="Container">
           <p>Available for</p>
           <ul>
             <li>
@@ -123,9 +95,27 @@ function App() {
               <a>PWA Progressive Web App</a>
             </li>
           </ul>
+          <div className="Badges">
+            <a
+              className="GooglePlay"
+              href="https://play.google.com/store/apps/details?id=com.abdz.breathing"
+            >
+              <img
+                className="GooglePlayBadge"
+                src={googleBadge}
+                alt="Google Play Badge"
+              />
+            </a>
+            <a href="https://apps.apple.com/us/app/calmaria/id1523108871">
+              <AppstoreBadge className="AppStore" />
+            </a>
+          </div>
+
+          <footer className="Footer">
+            Proudly cloned and copied by El Gordo
+          </footer>
         </div>
       </section>
-      <footer css={footerStyle}>Proudly cloned and copied by El Gordo</footer>
     </div>
   );
 }
