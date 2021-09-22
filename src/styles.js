@@ -7,6 +7,7 @@ export const wrapper = css`
   border: 0;
   line-height: 26px;
   overflow-x: hidden;
+  align-content: center;
 `;
 export const s1Style = css`
   display: block;
@@ -59,45 +60,6 @@ export const s1Style = css`
     margin: 0 auto;
     z-index: 100000;
     border: 0;
-  }
-  .Animation {
-    display: block;
-    position: absolute;
-    top: 430px;
-    width: 320px;
-    height: 320px;
-    left: calc(50% - 160px);
-    background-color: #000000;
-  }
-  .Sun {
-    width: 100%;
-    height: auto;
-    animation-fill-mode: forwards;
-    animation-name: breathing;
-    animation-duration: 19s;
-    animation-iteration-count: 4;
-    animation-timing-function: ease-in-out;
-  }
-  @keyframes breathing {
-    0% {
-      transform: scale(0.6);
-    }
-    19.04% {
-      transform: scale(1);
-    }
-    53% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0.6);
-    }
-  }
-  .SunLines {
-    z-index: 1000;
-    position: absolute;
-    left: 0;
-    bottom: 4px;
-    width: 100%;
   }
 `;
 export const s2Style = css`

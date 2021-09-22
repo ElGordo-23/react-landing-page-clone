@@ -3,8 +3,6 @@ import heroImage3 from './images/calmaria_2front.png';
 import heroImage2 from './images/calmaria_3pers.png';
 import heroImage from './images/calmaria_front.png';
 import googleBadge from './images/google-play-badge.png';
-import sun from './images/sun.png';
-import { ReactComponent as SunsetLines } from './images/sunset_lines.svg';
 /** @jsxImportSource @emotion/react */
 import { s1Style, s2Style, s3Style, s4Style, wrapper } from './styles.js';
 
@@ -37,10 +35,6 @@ function App() {
           </a>
           <div>
             <img className="Hero" src={heroImage} alt="Display of App" />
-          </div>
-          <div className="Animation">
-            <img className="Sun" src={sun} alt="Sun" />
-            <SunsetLines className="SunLines" />
           </div>
         </div>
       </section>
