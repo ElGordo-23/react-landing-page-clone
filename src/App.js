@@ -80,13 +80,17 @@ function App() {
           <p>Available for</p>
           <ul>
             <li>
-              <a>Android</a>
+              <a href="https://play.google.com/store/apps/details?id=com.abdz.breathing">
+                Android
+              </a>
             </li>
             <li>
-              <a>iOS</a>
+              <a href="https://apps.apple.com/us/app/calmaria/id1523108871">
+                iOS
+              </a>
             </li>
             <li>
-              <a>PWA Progressive Web App</a>
+              <a href="https://calmaria.app/pwa/">PWA Progressive Web App</a>
             </li>
           </ul>
           <div className="Badges">
