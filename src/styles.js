@@ -17,7 +17,7 @@ export const h1Styles = css`
   font-weight: 900;
   color: black;
   font-size: 48px;
-  font-family: 'Inter', Helvetica, Arial, sans-serif;
+
   line-height: 120%;
 `;
 
